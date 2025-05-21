@@ -1,0 +1,16 @@
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 906px;
+}
+.card{
+    background: gray;
+    border-radius: 13px;
+    margin: 21px;
+}
+.card-title{
+    color: blue;
+}
