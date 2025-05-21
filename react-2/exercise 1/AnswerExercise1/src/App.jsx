@@ -61,27 +61,20 @@ const pokemon = [
   },
 ];
 
+const customer = {
+  first_name: "Bob",
+  last_name: "Dylan",
+};
+
 function App() {
   return (
     <>
       {/* <Alert text="OMG! Something really bad has happened!" /> */}
-      {/* <Card
-        data={{
-          image: "../../.learn/assets/Dylan.png?raw=true",
-          cardTitle: "Bob Dylan",
-          cardDescription:
-            "Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer/songwriter, author, and artist who has been an influential figure in popular music and culture for more than five decades.",
-          button: {
-            url: "https://en.wikipedia.org/wiki/Bob_Dylan",
-            label: "Go to wikipedia",
-          },
-        }}
-      /> */}
+      {/* <Card data={BobData} /> */}
       {/* <RenderList array={animals}/> */}
       {/* <ShowPlanets planets={planets} /> */}
-      <Pokedex array={pokemon} />
-
-      <CustomerInformation first-name="Bob" last-name="Dylan"/>
+      {/* <Pokedex array={pokemon} /> */}
+      {/* <CustomerInformation customer={customer} /> */}
     </>
   );
 }
