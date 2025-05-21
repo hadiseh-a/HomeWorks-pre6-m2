@@ -1,9 +1,10 @@
 import "./App.css";
-import { Alert } from "./components/Alert";
-import Card from "./components/Card";
-import RenderList from "./components/RenderList";
-import { ShowPlanets } from "./components/ShowPlanets";
-import Pokedex from "./pokedex app/pokedex";
+import { Alert } from "./components/alert-component/Alert";
+import Card from "./components/building-a-layout/Card";
+import CustomerInformation from "./components/rendering-from-objects/CustomerInformation";
+import RenderList from "./components/maping-array-objects-to-li/RenderList";
+import { ShowPlanets } from "./components/maping-array-of-objects-to-li/ShowPlanets";
+import Pokedex from "./components/props-component-architecture/Pokedex";
 
 const BobData = {
   image: "../../.learn/assets/Dylan.png?raw=true",
@@ -61,7 +62,7 @@ const pokemon = [
   },
 ];
 
-const customer = {
+const customer1 = {
   first_name: "Bob",
   last_name: "Dylan",
 };
@@ -71,10 +72,10 @@ function App() {
     <>
       {/* <Alert text="OMG! Something really bad has happened!" /> */}
       {/* <Card data={BobData} /> */}
-      {/* <RenderList array={animals}/> */}
+      {/* <RenderList array={animals} /> */}
       {/* <ShowPlanets planets={planets} /> */}
       {/* <Pokedex array={pokemon} /> */}
-      {/* <CustomerInformation customer={customer} /> */}
+      <CustomerInformation customer={customer1} />
     </>
   );
 }

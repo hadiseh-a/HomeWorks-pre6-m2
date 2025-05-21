@@ -1,4 +1,5 @@
 import "./App.css";
+import Cards from "./Cards";
 
 const data = [
   {
@@ -33,6 +34,7 @@ function App() {
       <h1 className="heading">
         Image Gallery with <span className="highlight">React.js</span>
       </h1>
+      <Cards data={data} />
       <section className="gallery"></section>
     </main>
   );

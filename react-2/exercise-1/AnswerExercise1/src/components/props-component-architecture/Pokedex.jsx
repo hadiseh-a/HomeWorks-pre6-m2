@@ -1,4 +1,4 @@
-import PokeCard from "./pokeCard";
+import PokeCard from "./PokeCard";
 
 export default function Pokedex(props) {
   return (
