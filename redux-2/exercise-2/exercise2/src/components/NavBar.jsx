@@ -4,13 +4,13 @@ import Navbar from "react-bootstrap/Navbar";
 import { useSelector } from "react-redux";
 
 function NavBar() {
-  const totalPrice=useSelector((state)=>state.price)
+  const product = useSelector((state) => state);
 
   return (
     <>
-      <Navbar data-bs-theme="light" style={{ fontSize: 20 ,marginTop:20}}>
+      <Navbar data-bs-theme="light" style={{ fontSize: 20, marginTop: 20 }}>
         <Container>
-          <Navbar.Brand href="#home" >
+          <Navbar.Brand href="#home">
             <div className="d-flex w-50 align-items-center me-lg-4">
               <img
                 src="./src/assets/APSDark-BHi096m8.png"
@@ -22,7 +22,10 @@ function NavBar() {
               </h1>
             </div>
           </Navbar.Brand>
-          <Nav className="justify-content-between "style={{marginRight:"-50px"}}>
+          <Nav
+            className="justify-content-between "
+            style={{ marginRight: "-50px" }}
+          >
             <Nav.Link href="#home" className="me-4">
               Home
             </Nav.Link>
@@ -33,7 +36,21 @@ function NavBar() {
               Contact Us
             </Nav.Link>
             <Nav.Link href="#pricing" className="me-4">
-              {totalPrice}
+              ${product.price.toFixed(2)}
+              <span
+                style={{
+                  backgroundColor: "red",
+                  color: "white",
+                  borderRadius: "50%",
+                  fontSize: 15,
+                  position: "absolute",
+                  right: 100,
+                  top: 20,
+                  padding: 3,
+                }}
+              >
+                {product.numberOfProduct ? product.numberOfProduct : ""}
+              </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
