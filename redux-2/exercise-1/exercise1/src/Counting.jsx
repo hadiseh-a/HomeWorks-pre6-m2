@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { increment, decrement, reset } from "./redux/actionCreators.js";
+import { increment, decrement, reset } from "./redux/actions/actionCreators.js";
 import "./counting.css";
 
 export default function Counting() {

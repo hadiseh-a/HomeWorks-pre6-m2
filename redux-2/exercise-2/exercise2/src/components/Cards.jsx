@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import "../assets/data.json";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
-import { changePriceBasket } from "../redux/actionCreators";
+import { changePriceBasket } from "../redux/actions/actionCreators";
 import Modal from "react-bootstrap/Modal";
 
 function OneCard({ data }) {
