@@ -38,7 +38,7 @@ export default function JobCard({
       <div className="d-flex align-items-center flex-wrap">
         <img src={logo} alt="logo" className="logo m-4" />
         <div>
-          <ul className="d-flex container flex-wrap">
+          <ul className="d-flex container flex-wrap deleteMargin">
             <li className="fw-bold company mx-1">{company}</li>
             {newOne && <li className="new px-1 fw-bold mx-1">NEW!</li>}
             {featured && (

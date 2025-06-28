@@ -12,9 +12,11 @@ const itemsSlice = createSlice({
       if (state.find((item) => item === action.payload))
         return state.filter((item) => item !== action.payload);
       console.log(state);
-    },
+    },clearItems:()=>{
+      return[]
+    }
   },
 });
 
-export const { addtoItems, removeFromItems } = itemsSlice.actions;
+export const { addtoItems, removeFromItems,clearItems } = itemsSlice.actions;
 export default itemsSlice.reducer;

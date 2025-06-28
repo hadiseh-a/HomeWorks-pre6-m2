@@ -54,30 +54,39 @@ button {
   color: #ffffff;
 }
 .box {
-  display: flex;
-  flex-wrap: wrap;
   background: #ffffff;
   padding: 1rem;
-  gap: 12px;
   position: relative;
   top: -30px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.box li {
+.box ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.box ul li {
   color: rgb(89, 131, 117);
   background-color: rgb(210, 236, 227);
   font-weight: bold;
-
 }
-.deletebtn{
+
+.deletebtn {
   background-color: rgb(89, 131, 117);
 }
-.deletebtn:hover{
+.deletebtn:hover {
   background-color: rgb(28, 41, 36);
 }
 @media (max-width: 500px) {
   .hr {
     visibility: visible;
     color: grey;
+  }
+  .header{
+  background-image: url("./images/bg-header-mobile.svg");
+
   }
   .cardStyle {
     position: relative;
@@ -92,5 +101,8 @@ button {
   }
   .item li {
     margin-top: 0.5rem;
+  }
+  .deleteMargin{
+    margin-top: -53px;
   }
 }
