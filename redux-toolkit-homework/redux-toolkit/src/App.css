@@ -1,0 +1,96 @@
+body {
+  background: rgb(195, 220, 206);
+}
+.header {
+  background-image: url("./images/bg-header-desktop.svg");
+  background-color: rgb(80, 147, 124);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 113px;
+}
+li {
+  display: flex;
+}
+.logo {
+  width: 4em;
+  height: 4em;
+}
+.company {
+  color: rgb(114, 159, 145);
+}
+.new {
+  background-color: rgb(114, 159, 154);
+  color: white;
+  border-radius: 15px;
+  font-size: x-small;
+  text-align: center;
+  align-items: center;
+}
+.featured {
+  background-color: rgb(40, 49, 48);
+  color: white;
+  border-radius: 15px;
+  font-size: x-small;
+  text-align: center;
+  align-items: center;
+}
+.item li button {
+  color: rgb(77, 118, 104);
+  font-weight: bold;
+  background-color: rgb(222, 228, 226);
+}
+#featuredChecked {
+  border-left: solid 0.33rem rgb(77, 118, 104);
+}
+.hr {
+  visibility: hidden;
+}
+button {
+  border-style: none;
+}
+.item li button:hover {
+  background-color: rgb(77, 118, 104);
+  color: #ffffff;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  padding: 1rem;
+  gap: 12px;
+  position: relative;
+  top: -30px;
+}
+.box li {
+  color: rgb(89, 131, 117);
+  background-color: rgb(210, 236, 227);
+  font-weight: bold;
+
+}
+.deletebtn{
+  background-color: rgb(89, 131, 117);
+}
+.deletebtn:hover{
+  background-color: rgb(28, 41, 36);
+}
+@media (max-width: 500px) {
+  .hr {
+    visibility: visible;
+    color: grey;
+  }
+  .cardStyle {
+    position: relative;
+    padding: 10px;
+    margin-bottom: 5rem !important;
+  }
+  .logo {
+    position: relative;
+    top: -60px;
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+  .item li {
+    margin-top: 0.5rem;
+  }
+}
