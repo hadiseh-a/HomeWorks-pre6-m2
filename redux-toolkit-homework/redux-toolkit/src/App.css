@@ -72,7 +72,9 @@ button {
   background-color: rgb(210, 236, 227);
   font-weight: bold;
 }
-
+.hoverClearbtn:hover {
+  color: rgb(89, 131, 117);
+}
 .deletebtn {
   background-color: rgb(89, 131, 117);
 }
@@ -84,9 +86,8 @@ button {
     visibility: visible;
     color: grey;
   }
-  .header{
-  background-image: url("./images/bg-header-mobile.svg");
-
+  .header {
+    background-image: url("./images/bg-header-mobile.svg");
   }
   .cardStyle {
     position: relative;
@@ -102,7 +103,7 @@ button {
   .item li {
     margin-top: 0.5rem;
   }
-  .deleteMargin{
+  .deleteMargin {
     margin-top: -53px;
   }
 }

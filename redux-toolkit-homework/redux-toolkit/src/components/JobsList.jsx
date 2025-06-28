@@ -56,7 +56,7 @@ export default function JobsList() {
             </li>
           ))}
         </ul>
-        <button className="bg-body" onClick={handleClick}>
+        <button className="bg-body hoverClearbtn" onClick={handleClick}>
           clear
         </button>
       </div>
